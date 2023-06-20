@@ -1,0 +1,19 @@
+import java.util.*;
+public class Test {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner (System.in);
+		System.out.println("Enter the Customer Name:");
+		String Name=sc.next();
+		System.out.println("Enter the credit point :");
+		int point=sc.nextInt();
+		
+		Customer c =new Customer(Name,point);
+  	 //     CardsOnOffer c1=new CardOnOffer();
+	//	System.out.println(c1.getOfferedCard(c));
+		CardType c1=CardsOnOffer.getOfferedCard(c);
+		System.out.println(c1);
+		
+	}
+
+}

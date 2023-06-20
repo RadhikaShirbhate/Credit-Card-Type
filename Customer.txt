@@ -1,0 +1,25 @@
+public class Customer 
+{
+	public String customerName;
+	private int creditPoints;
+	
+	public Customer(String customerName,int creditPoints)
+	{
+		this.customerName=customerName;
+		this.creditPoints=creditPoints;
+	}
+	
+	public int getCreditPoints()
+	{
+		return this.creditPoints;
+		
+	}
+
+	@Override
+	public String toString() {
+		return "Customer [customerName=" + customerName + ", creditPoints=" + creditPoints + "]";
+	}
+	
+	
+
+}
